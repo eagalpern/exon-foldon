@@ -1,3 +1,17 @@
+import numpy as np
+import pandas as pd
+import seaborn as sns
+import py3Dmol
+from matplotlib import pyplot as plt, colors
+from matplotlib.colors import Normalize,BoundaryNorm
+from matplotlib import cm
+from matplotlib.ticker import MaxNLocator
+import matplotlib.patches as mpatch
+from matplotlib.collections import PatchCollection
+import matplotlib.path as mpath
+import matplotlib
+import scipy.signal as scs
+
 def rand_cmap(nlabels, type='bright', first_color_black=True, last_color_black=False,
               start_with_cmap=True, verbose=True):
     """
